@@ -9,6 +9,7 @@
   --medium-font-weight: 500;
   --regular-font-weight: 400;
 }
+
 body {
   font-family: var(--primary-font);
   font-size: 16px;
@@ -38,6 +39,7 @@ div > a {
   text-decoration: none;
   color: var(--light-grey);
 }
+
 .card-footer {
   color: var(--light-grey) !important;
 }
@@ -53,20 +55,20 @@ div > a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.column-1 {
+.web-design {
   background-image: url(./assets/home/desktop/image-web-design-large.jpg);
   background-repeat: no-repeat;
   border-radius: 0.8rem;
   background-size: cover;
   width: 550px;
 }
-.column-2-1 {
+.app-design {
   background-image: url(./assets/home/desktop/image-app-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 320px;
 }
-.column-2-2 {
+.graphic-design {
   background-image: url(./assets/home/desktop/image-graphic-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +100,25 @@ div > a {
 footer img {
   max-width: 12rem;
 }
-
+.top-box {
+  background-color: var(--peach);
+  width: 1111px;
+  height: 252px;
+  background-image: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
+}
+.sample-title {
+  color: var(--light-peach);
+}
+.container {
+  max-width: 1111px !important;
+}
+.navlink > a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+.navigation-section > a {
+  width: 550px;
+}
 @media (max-width: 768px) {
   .home-hero-section {
     width: 327px;
@@ -109,19 +129,19 @@ footer img {
     width: 327px;
     height: 798px;
   }
-  .column-1 {
+  .web-design {
     width: 327px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-web-design.jpg);
   }
 
-  .column-2-1 {
+  .app-design {
     width: 327px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-app-design.jpg);
   }
 
-  .column-2-2 {
+  .graphic-design {
     width: 327px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-graphic-design.jpg);
@@ -139,5 +159,12 @@ footer img {
     background-color: var(--peach) !important;
     width: 327px !important;
     background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+  }
+
+  .top-box {
+    background-color: var(--peach);
+    width: 375px;
+    height: 320px;
+    background-image: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
   }
 }

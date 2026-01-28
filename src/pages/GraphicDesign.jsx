@@ -1,5 +1,5 @@
 import React from "react";
 
 export const GraphicDesign = () => {
-  return <div>GraphicDesign</div>;
+  return <div className="">GraphicDesign</div>;
 };

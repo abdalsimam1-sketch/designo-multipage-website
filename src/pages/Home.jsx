@@ -3,6 +3,8 @@ import phoneImg from "../assets/home/desktop/image-hero-phone.png";
 import pic1 from "../assets/home/desktop/illustration-passionate.svg";
 import pic2 from "../assets/home/desktop/illustration-resourceful.svg";
 import pic3 from "../assets/home/desktop/illustration-friendly.svg";
+import { GetInTouch } from "../components/GetInTouch";
+import { Link } from "react-router-dom";
 export const Home = () => {
   const descriptions = [
     {
@@ -41,22 +43,35 @@ export const Home = () => {
         </div>
       </section>
       <section className="design-section d-flex flex-column flex-md-row mx-auto text-white  gap-3">
-        <div className="column-1 d-flex flex-column justify-content-center align-items-center rounded">
-          <h1>WEB DESIGN</h1>
-          <h3>VIEW PROJECTS</h3>
-        </div>
+        <Link
+          to="/web-design"
+          className="web-design d-flex flex-column justify-content-center align-items-center rounded"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          {" "}
+          <div className="">
+            <h1>WEB DESIGN</h1>
+            <h3>VIEW PROJECTS</h3>
+          </div>
+        </Link>
         <div
           className="column-2 d-flex flex-column gap-3"
           style={{ maxWidth: "550px", width: "100%" }}
         >
-          <div className="column-2-1  d-flex flex-column justify-content-center align-items-center rounded">
-            <h1>APP DESIGN</h1>
-            <h3>VIEW PROJECTS</h3>
-          </div>
-          <div className="column-2-2  d-flex flex-column justify-content-center align-items-center rounded">
-            <h1>GRAPHIC DESIGN</h1>
-            <h3>VIEW PROJECTS</h3>
-          </div>
+          <Link to="/app-design">
+            {" "}
+            <div className="app-design d-flex flex-column justify-content-center align-items-center rounded">
+              <h1>APP DESIGN</h1>
+              <h3>VIEW PROJECTS</h3>
+            </div>
+          </Link>
+          <Link to="graphic-design">
+            {" "}
+            <div className="graphic-design  d-flex flex-column justify-content-center align-items-center rounded">
+              <h1>GRAPHIC DESIGN</h1>
+              <h3>VIEW PROJECTS</h3>
+            </div>
+          </Link>
         </div>
       </section>
       <section className="description-section mx-auto mt-5 text-center">
@@ -65,23 +80,13 @@ export const Home = () => {
             <div className="card" key={index}>
               <img src={description.pic} alt="" className="mx-auto" />
               <h3>{description.title}</h3>
-              <p>{description.text}</p>
+              <p className="text-muted">{description.text}</p>
             </div>
           ))}
         </div>
       </section>
-      <section className="get-in-touch d-flex flex-column flex-md-row  align-items-center justify-content-md-around py-3 card mx-auto text-center text-md-start">
-        <div className="text-white col-md-4 ">
-          <h2> Let’s talk about your project</h2>
-          <p>
-            {" "}
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business grow.
-          </p>
-        </div>
-        <div className="d-flex align-items-center ">
-          <button className="btn bg-white text-black ">GET IN TOUCH</button>
-        </div>
+      <section>
+        <GetInTouch></GetInTouch>
       </section>
     </>
   );
