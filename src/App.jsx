@@ -8,7 +8,7 @@ import { About } from "./pages/About";
 import { Locations } from "./pages/Locations";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
-
+import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
@@ -26,6 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </>
   );
 }

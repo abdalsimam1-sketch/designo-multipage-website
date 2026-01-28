@@ -61,8 +61,8 @@ export const Home = () => {
       </section>
       <section className="description-section mx-auto mt-5 text-center">
         <div className="cards d-flex flex-column flex-md-row gap-3 ">
-          {descriptions.map((description) => (
-            <div className="card">
+          {descriptions.map((description, index) => (
+            <div className="card" key={index}>
               <img src={description.pic} alt="" className="mx-auto" />
               <h3>{description.title}</h3>
               <p>{description.text}</p>
@@ -70,7 +70,7 @@ export const Home = () => {
           ))}
         </div>
       </section>
-      <section className="get-in-touch-btn d-flex flex-column flex-md-row  align-items-center justify-content-md-around py-3 card mx-auto text-center text-md-start">
+      <section className="get-in-touch d-flex flex-column flex-md-row  align-items-center justify-content-md-around py-3 card mx-auto text-center text-md-start">
         <div className="text-white col-md-4 ">
           <h2> Let’s talk about your project</h2>
           <p>

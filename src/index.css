@@ -34,6 +34,16 @@ h3 {
   text-decoration: none;
   color: var(--black);
 }
+div > a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+.card-footer {
+  color: var(--light-grey) !important;
+}
+.card-line {
+  color: var(--light-grey) !important;
+}
 .home-hero-section {
   background-color: var(--peach);
   background-color: url();
@@ -76,10 +86,17 @@ h3 {
   border-radius: 50%;
   background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
 }
-.get-in-touch-btn {
+.get-in-touch {
   background-color: var(--peach) !important;
   width: 1111px;
   background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+  transform: translateY(50px);
+}
+.footer {
+  background-color: var(--dark-grey) !important;
+}
+footer img {
+  max-width: 12rem;
 }
 
 @media (max-width: 768px) {
@@ -113,9 +130,14 @@ h3 {
     width: 327px;
     height: 1200px;
   }
+  .get-in-touch {
+    background-color: var(--peach) !important;
+    width: 327px !important;
+    background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+  }
   .get-in-touch-btn {
     background-color: var(--peach) !important;
-    width: 327px;
+    width: 327px !important;
     background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
   }
 }
