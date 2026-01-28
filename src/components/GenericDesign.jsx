@@ -8,7 +8,7 @@ export const GenericDesign = ({ name, text }) => {
         style={{ borderRadius: "1rem" }}
       >
         <h1>{name}</h1>
-        <p className="col-5 mx-auto">{text}</p>
+        <p className="col-md-5 mx-auto">{text}</p>
       </div>
     </>
   );

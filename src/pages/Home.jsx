@@ -1,4 +1,3 @@
-import React from "react";
 import phoneImg from "../assets/home/desktop/image-hero-phone.png";
 import pic1 from "../assets/home/desktop/illustration-passionate.svg";
 import pic2 from "../assets/home/desktop/illustration-resourceful.svg";

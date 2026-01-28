@@ -56,10 +56,9 @@ export const WebDesign = () => {
           <div className="row">
             {sampleSites.map((sample, index) => (
               <div className="col-10 mx-auto col-md-6 col-lg-4 g-3" key={index}>
-                {" "}
-                <div className="card ">
+                <div className="card">
                   <img src={sample.pic} alt="" className="card-img-top" />
-                  <div className="card-footer text-center text-dark ">
+                  <div className="card-footer text-center text-dark sample-footer">
                     <h3
                       className="sample-title"
                       style={{ letterSpacing: "4px" }}
@@ -76,6 +75,8 @@ export const WebDesign = () => {
       </section>
       <section>
         <NavigationSection
+          link1="/app-design"
+          link2="/graphic-design"
           class1="app-design"
           class2="graphic-design"
           title1="APP DESIGN"
