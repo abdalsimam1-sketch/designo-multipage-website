@@ -125,6 +125,17 @@ footer img {
   background-color: var(--footer-bg) !important;
   height: 100%;
 }
+
+.about-hero-section {
+  background-color: var(--peach);
+  background-image: url(./assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 1111px;
+  height: 480px;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .home-hero-section {
     width: 327px;
@@ -172,5 +183,9 @@ footer img {
     width: 375px;
     height: 320px;
     background-image: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
+  }
+  .about-hero-section {
+    width: 375px;
+    height: 715px;
   }
 }
