@@ -12,18 +12,19 @@ import { NotFound } from "./pages/NotFound";
 function App() {
   return (
     <>
+      <Navbar></Navbar>
       <Routes>
-        <Route to="/" element={<Home></Home>}></Route>
-        <Route to="/web-design" element={<WebDesign></WebDesign>}></Route>
-        <Route to="/app-design" element={<AppDesign></AppDesign>}></Route>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/web-design" element={<WebDesign></WebDesign>}></Route>
+        <Route path="/app-design" element={<AppDesign></AppDesign>}></Route>
         <Route
-          to="/graphic-design"
+          path="/graphic-design"
           element={<GraphicDesign></GraphicDesign>}
         ></Route>
-        <Route to="/about" element={<About></About>}></Route>
-        <Route to="/locations" element={<Locations></Locations>}></Route>
-        <Route to="/contact" element={<Contact></Contact>}></Route>
-        <Route to="*" element={<NotFound></NotFound>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/locations" element={<Locations></Locations>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </>
   );

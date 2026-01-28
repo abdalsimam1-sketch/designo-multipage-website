@@ -4,14 +4,22 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-      <nav>
-        <img src={logoDark} alt="logo-dark" />
-        <div>
+      <nav className="d-flex justify-content-around align-items-center pt-5 ">
+        <Link to="/">
           {" "}
-          <Link>OUR COMPANY</Link>
+          <img
+            src={logoDark}
+            alt="logo-dark"
+            style={{ maxWidth: "10rem", maxHeight: "1.3rem" }}
+          />
+        </Link>
+        <div className="d-none  d-md-flex gap-lg-5 nav-links">
+          {" "}
+          <Link to="/about">OUR COMPANY</Link>
           <Link>LOCATIONS</Link>
           <Link>CONTACT</Link>
         </div>
+        <i className="bi bi-list btn fs-2 d-lg-none"></i>
       </nav>
     </>
   );
