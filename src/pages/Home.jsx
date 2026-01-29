@@ -24,7 +24,7 @@ export const Home = () => {
   ];
   return (
     <>
-      <section className="home-hero-section mx-auto d-flex flex-column flex-md-row  justify-content-around text-center text-md-start my-5 pb-5 ">
+      <section className="home-hero-section mx-auto d-flex flex-column flex-md-row  justify-content-around text-center text-md-start mb-5  ">
         {" "}
         <div className="text-white col-md-5 d-flex flex-column justify-content-center order-2 order-md-1">
           <h1>Award-winning custom designs and digital branding solutions</h1>
@@ -33,7 +33,7 @@ export const Home = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="btn bg-light text-dark align-self-start mx-auto m-md-0">
+          <button className="btn bg-light text-dark align-self-start mx-auto m-md-0 ">
             Learn More
           </button>
         </div>
@@ -44,7 +44,7 @@ export const Home = () => {
       <section className="design-section d-flex flex-column flex-md-row mx-auto text-white  gap-3">
         <Link
           to="/web-design"
-          className="web-design d-flex flex-column justify-content-center align-items-center rounded"
+          className="web-design home-web-design d-flex flex-column justify-content-center align-items-center rounded"
           style={{ textDecoration: "none", color: "white" }}
         >
           {" "}

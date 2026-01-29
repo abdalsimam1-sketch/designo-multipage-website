@@ -10,6 +10,10 @@
   --regular-font-weight: 400;
   --footer-bg: #fdf3f0;
 }
+a:hover,
+i:hover {
+  color: var(--peach);
+}
 
 body {
   font-family: var(--primary-font);
@@ -183,45 +187,48 @@ footer img {
   background-color: var(--peach);
   background-image: url(./assets/shared/desktop/bg-pattern-two-circles.svg);
 }
+.home-web-design {
+  height: 655px;
+}
 @media (max-width: 768px) {
   .home-hero-section {
-    width: 327px;
+    width: 375px;
     height: 843px;
     background-image: url();
   }
   .design-section {
-    width: 327px;
+    width: 375px;
     height: 798px;
   }
   .web-design {
-    width: 327px;
+    width: 375px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-web-design.jpg);
   }
 
   .app-design {
-    width: 327px;
+    width: 375px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-app-design.jpg);
   }
 
   .graphic-design {
-    width: 327px;
+    width: 375px;
     height: 250px;
     background-image: url(./assets/home/mobile/image-graphic-design.jpg);
   }
   .description-section {
-    width: 327px;
+    width: 375px;
     height: 1200px;
   }
   .get-in-touch {
     background-color: var(--peach) !important;
-    width: 327px !important;
+    width: 375px !important;
     background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
   }
   .get-in-touch-btn {
     background-color: var(--peach) !important;
-    width: 327px !important;
+    width: 375px !important;
     background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
   }
 
@@ -263,12 +270,14 @@ footer img {
   }
   .canada-section,
   .aus-section,
-  .uk-section,
-  .container {
+  .uk-section {
     width: 375px !important;
     height: 714px;
   }
   .menu {
-    width: 327px;
+    width: 375px;
+  }
+  .container {
+    max-width: 375px;
   }
 }

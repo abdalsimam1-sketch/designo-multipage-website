@@ -27,7 +27,7 @@ export const Navbar = () => {
         <i className="bi bi-list btn fs-2 d-md-none" onClick={toggleMenu}></i>
       </nav>
       {isOpen && (
-        <div className="d-flex flex-column  gap-3 align-items-center bg-dark mx-auto menu p-5 d-md-none">
+        <div className="d-flex flex-column  gap-3 align-items-center bg-dark mx-auto menu p-5 d-md-none rounded">
           {" "}
           <Link to="/about">OUR COMPANY</Link>
           <Link to="/locations">LOCATIONS</Link>

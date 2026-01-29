@@ -31,7 +31,7 @@ export const GraphicDesign = () => {
           text="We deliver eye-catching branding materials that are tailored to meet your business objectives."
         ></GenericDesign>
       </section>
-      <section className="container my-5 ">
+      <section className="container my-3 ">
         <div className="row">
           {graphicSamples.map((sample) => (
             <div className="col-10  mx-auto mx-md-0 col-md-6 col-lg-4 g-3 ">

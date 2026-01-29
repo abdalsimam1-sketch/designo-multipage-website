@@ -51,7 +51,7 @@ export const WebDesign = () => {
         ></GenericDesign>
       </section>
 
-      <section className="sample-webpages-section mb-5">
+      <section className="sample-webpages-section mb-3">
         <div className="container">
           <div className="row">
             {sampleSites.map((sample, index) => (
