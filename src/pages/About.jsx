@@ -5,6 +5,7 @@ import { GetInTouch } from "../components/GetInTouch";
 import pic1 from "../assets/shared/desktop/illustration-australia.svg";
 import pic2 from "../assets/shared/desktop/illustration-united-kingdom.svg";
 import pic3 from "../assets/shared/desktop/illustration-canada.svg";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   const locationSamples = [
@@ -71,9 +72,12 @@ export const About = () => {
                 <img src={country.pic} alt="" className="mx-auto" />
                 <div className="card-footer d-flex flex-column align-items-center">
                   <h3 className="text-dark">{country.country}</h3>
-                  <button className="btn location-btn text-white">
-                    SEE LOCATION
-                  </button>
+                  <Link to="/locations">
+                    {" "}
+                    <button className="btn location-btn text-white">
+                      SEE LOCATION
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

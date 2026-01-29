@@ -164,6 +164,20 @@ footer img {
 .location-btn {
   background-color: var(--peach) !important;
 }
+.canada-img {
+  overflow: hidden;
+}
+.canada-text {
+  background-color: var(--footer-bg);
+  background-image: url(./assets/shared/desktop/bg-pattern-call-to-action.svg);
+}
+
+.canada-section,
+.aus-section,
+.uk-section {
+  width: 1111px;
+  height: 326px;
+}
 @media (max-width: 768px) {
   .home-hero-section {
     width: 327px;
@@ -238,5 +252,11 @@ footer img {
   }
   .real-deal-section img {
     content: url(./assets/about/mobile/image-real-deal.jpg);
+  }
+  .canada-section,
+  .aus-section,
+  .uk-section {
+    width: 375px !important;
+    height: 714px;
   }
 }

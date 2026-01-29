@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export const GetInTouch = () => {
   return (
@@ -12,7 +12,10 @@ export const GetInTouch = () => {
         </p>
       </div>
       <div className="d-flex align-items-center ">
-        <button className="btn bg-white text-black ">GET IN TOUCH</button>
+        <Link to="/contact">
+          {" "}
+          <button className="btn bg-white text-black ">GET IN TOUCH</button>
+        </Link>
       </div>
     </section>
   );
