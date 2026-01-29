@@ -2,7 +2,7 @@ import aboutHero from "../assets/about/desktop/image-about-hero.jpg";
 import worldClass from "../assets/about/desktop/image-world-class-talent.jpg";
 import realDeal from "../assets/about/desktop/image-real-deal.jpg";
 import { GetInTouch } from "../components/GetInTouch";
-import { LocationImages } from "../components/locationImages";
+import { LocationImages } from "../components/LocationImages.jsx";
 
 import { Link } from "react-router-dom";
 

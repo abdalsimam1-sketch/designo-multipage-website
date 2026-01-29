@@ -1,4 +1,4 @@
-import { LocationImages } from "../components/locationImages";
+import { LocationImages } from "../components/LocationImages";
 
 export const Contact = () => {
   return (
