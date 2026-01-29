@@ -125,15 +125,19 @@ footer img {
   background-color: var(--footer-bg) !important;
   height: 100%;
 }
-.world-class-section {
+.world-class-section,
+.real-deal-section {
   width: 1111px;
   height: 480px;
-
   overflow: hidden;
 }
-.world-text {
+.world-text,
+.real-text {
   background-color: var(--footer-bg);
+  overflow: hidden;
+  background-image: url(./assets/shared/desktop/bg-pattern-call-to-action.svg);
 }
+
 .about-hero-section {
   background-color: var(--peach);
   background-image: url(./assets/about/desktop/bg-pattern-hero-about-desktop.svg);
@@ -143,6 +147,22 @@ footer img {
   width: 1111px;
   height: 480px;
   overflow: hidden;
+}
+.location-section {
+  width: 1111px;
+  height: 360px;
+}
+.location-section img {
+  width: 200px;
+  background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+
+  border-radius: 50%;
+}
+.location-section .card {
+  background-image: url(./assets/shared/desktop/bg-pattern-call-to-action.svg) !important;
+}
+.location-btn {
+  background-color: var(--peach) !important;
 }
 @media (max-width: 768px) {
   .home-hero-section {
@@ -195,5 +215,28 @@ footer img {
   .about-hero-section {
     width: 375px;
     height: 715px;
+  }
+  .about-hero-section img {
+    content: url(./assets/about/mobile/image-about-hero.jpg);
+  }
+
+  .world-class-section {
+    width: 375px;
+    height: 865px;
+  }
+
+  .world-img img {
+    content: url(./assets/about/mobile/image-world-class-talent.jpg);
+  }
+  .location-section {
+    width: 380px;
+    height: 1111px;
+  }
+  .real-deal-section {
+    width: 375px;
+    height: 865px;
+  }
+  .real-deal-section img {
+    content: url(./assets/about/mobile/image-real-deal.jpg);
   }
 }
