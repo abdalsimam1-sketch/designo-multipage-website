@@ -23,13 +23,10 @@ export const Navbar = () => {
           <Link to="/locations">LOCATIONS</Link>
           <Link to="/contact">CONTACT</Link>
         </div>
-        <i
-          className="bi bi-list btn fs-2 d-md-none"
-          onClick={() => toggleMenu}
-        ></i>
+        <i className="bi bi-list btn fs-2 d-md-none" onClick={toggleMenu}></i>
       </nav>
       {isOpen && (
-        <div className="d-flex">
+        <div className="d-flex flex-column  gap-3 align-items-center bg-dark mx-auto menu p-5 d-md-none">
           {" "}
           <Link to="/about">OUR COMPANY</Link>
           <Link to="/locations">LOCATIONS</Link>
