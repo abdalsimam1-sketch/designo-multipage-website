@@ -3,7 +3,7 @@ import { LocationImages } from "../components/LocationImages";
 export const Contact = () => {
   return (
     <>
-      <section className=" container contact-section rounded d-flex flex-column flex-md-row text-center text-md-start ">
+      <section className=" contact-section mx-auto rounded d-flex flex-column flex-md-row text-center text-md-start ">
         <div className="contact-text text-white col-md-7 p-5 d-flex flex-column justify-content-center">
           <h1 className=""> Contact us</h1>
           <p>
