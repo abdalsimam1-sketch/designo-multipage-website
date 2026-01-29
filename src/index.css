@@ -125,7 +125,15 @@ footer img {
   background-color: var(--footer-bg) !important;
   height: 100%;
 }
+.world-class-section {
+  width: 1111px;
+  height: 480px;
 
+  overflow: hidden;
+}
+.world-text {
+  background-color: var(--footer-bg);
+}
 .about-hero-section {
   background-color: var(--peach);
   background-image: url(./assets/about/desktop/bg-pattern-hero-about-desktop.svg);

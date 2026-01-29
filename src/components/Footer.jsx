@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <>
       <>
-        <footer className=" footer p-5 text-center text-md-start">
+        <footer className=" footer p-5 text-center text-md-start mt-5">
           <div className="card-body d-flex flex-column flex-md-row justify-content-around pt-5 gap-3">
             <img src={logolight} alt="" className="mx-auto m-md-0 " />{" "}
             <div className="d-flex gap-md-5 gap-3 flex-column flex-md-row ">
