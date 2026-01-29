@@ -178,6 +178,11 @@ footer img {
   width: 1111px;
   height: 326px;
 }
+.contact-section,
+.inputs {
+  background-color: var(--peach);
+  background-image: url(./assets/shared/desktop/bg-pattern-two-circles.svg);
+}
 @media (max-width: 768px) {
   .home-hero-section {
     width: 327px;
@@ -253,9 +258,13 @@ footer img {
   .real-deal-section img {
     content: url(./assets/about/mobile/image-real-deal.jpg);
   }
+  .contact-text {
+    height: 40%;
+  }
   .canada-section,
   .aus-section,
-  .uk-section {
+  .uk-section,
+  .container {
     width: 375px !important;
     height: 714px;
   }
