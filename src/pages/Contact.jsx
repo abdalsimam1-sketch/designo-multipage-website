@@ -36,7 +36,10 @@ export const Contact = () => {
               placeholder="Message"
               rows="5"
             />
-            <button className="btn bg-white text-dark btn-bg align-self-end mb-5">
+            <button
+              type="submit"
+              className="btn bg-white text-dark btn-bg align-self-end mb-5"
+            >
               SUBMIT
             </button>
           </form>

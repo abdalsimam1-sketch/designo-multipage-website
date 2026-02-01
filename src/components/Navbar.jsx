@@ -29,9 +29,15 @@ export const Navbar = () => {
       {isOpen && (
         <div className="d-flex flex-column  gap-3 align-items-center bg-dark mx-auto menu p-5 d-md-none rounded">
           {" "}
-          <Link to="/about">OUR COMPANY</Link>
-          <Link to="/locations">LOCATIONS</Link>
-          <Link to="/contact">CONTACT</Link>
+          <Link to="/about" onClick={toggleMenu}>
+            OUR COMPANY
+          </Link>
+          <Link to="/locations" onClick={toggleMenu}>
+            LOCATIONS
+          </Link>
+          <Link to="/contact" onClick={toggleMenu}>
+            CONTACT
+          </Link>
         </div>
       )}
     </main>
