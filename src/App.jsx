@@ -9,9 +9,11 @@ import { Locations } from "./pages/Locations";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { Footer } from "./components/Footer";
+import { Scroll } from "./components/Scroll";
 function App() {
   return (
     <>
+      <Scroll></Scroll>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

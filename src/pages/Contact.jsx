@@ -1,6 +1,18 @@
 import { LocationImages } from "../components/LocationImages";
+import { useState } from "react";
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+  };
   return (
     <>
       <section className=" contact-section mx-auto rounded d-flex flex-column flex-md-row text-center text-md-start ">
@@ -19,22 +31,26 @@ export const Contact = () => {
               type="text"
               className="form-control inputs"
               placeholder="Name"
+              required
             />
             <input
               type="email"
               className="form-control inputs"
               placeholder="Email"
+              required
             />
             <input
               type="phone"
               className="form-control inputs"
               placeholder="Phone number"
+              required
             />
             <textarea
               type="text"
               className="form-control inputs"
               placeholder="Message"
               rows="5"
+              required
             />
             <button
               type="submit"
