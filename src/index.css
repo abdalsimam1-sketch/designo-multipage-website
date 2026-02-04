@@ -14,6 +14,17 @@ a:hover,
 i:hover {
   color: var(--peach);
 }
+html,
+body {
+  overflow-x: hidden; /* Stops the side-scrolling */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
 
 body {
   font-family: var(--primary-font);
@@ -196,7 +207,6 @@ footer img {
   .home-hero-section {
     width: 375px;
     height: 843px;
-    background-image: url();
   }
   .design-section {
     width: 375px;
