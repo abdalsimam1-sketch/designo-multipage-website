@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import imageOptimizer from "vite-plugin-image-optimizer";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    imageOptimizer({
+      png: { quality: 80 },
+      jpeg: { quality: 80 },
+      jpg: { quality: 80 },
+      webp: { lossless: true },
+      // The plugin can also convert everything to WebP/AVIF if you configure it.
+    }),
+  ],
+});

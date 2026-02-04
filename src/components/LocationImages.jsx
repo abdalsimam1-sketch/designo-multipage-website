@@ -22,8 +22,8 @@ export const LocationImages = () => {
       {" "}
       <section className="location-section mx-auto  my-md-5">
         <div className="row">
-          {locationSamples.map((country) => (
-            <div className="col-12 mx-auto col-md-6 col-lg-4 g-5">
+          {locationSamples.map((country, index) => (
+            <div key={index} className="col-12 mx-auto col-md-6 col-lg-4 g-5">
               <div className="card">
                 <img src={country.pic} alt="" className="mx-auto" />
                 <div className="card-footer d-flex flex-column align-items-center">
